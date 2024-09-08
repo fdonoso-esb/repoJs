@@ -37,4 +37,10 @@ function showbooks() {
             document.getElementById('pagesNumber').value = '';
  }
 
- 
+  function deletebook(index) {
+          // Usamos splice para eliminar el libro en la posición especificada por 'index'
+    books.splice(index, 1);
+
+    // Llamamos a showBooks para actualizar la lista de libros mostrada
+    showbooks();
+    }
